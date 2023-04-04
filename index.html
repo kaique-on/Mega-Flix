@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/atropos.css" />
     <title>Mega Flix</title>
     <script src="https://kit.fontawesome.com/6cde816448.js" crossorigin="anonymous"></script>
 </head>
@@ -58,9 +59,85 @@
             <p>Tenha uma comunidade ativa e engajada, que compartilha sugestões e recomendações</p>
         </div>
     </section>
+        <section class="filmesPrincipais">
+            <h1 class="filmesPrincipais__titulo">Filmes mais aclamados e desejados</h1>
+            <div class="atropos my-atropos">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <!-- put your custom content here -->
+                      <img src="./imagens/Animais Fantasticos.jpg" alt="Animais Fantásticos">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <section class="filmesPrincipais"></section>
+              <div class="atropos my-atropos2">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <!-- put your custom content here -->
+                      <img src="./imagens/harryPotter.jpeg" alt="Harry Potter">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="atropos my-atropos3">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                  <!-- rotate container (required) -->
+                  <div class="atropos-rotate">
+                    <!-- inner container (required) -->
+                    <div class="atropos-inner">
+                      <!-- put your custom content here -->
+                      <img src="./imagens/aquaman.jpeg" alt="Aquaman">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+            
+        </section>
     </main>
+
+    <script src="./js/atropos.min.js"></script>
+    <script>
+        const myAtropos = Atropos({
+            el: '.my-atropos',
+            shadowScale: 1,
+            shadow: true,
+            shadowOffset: 40,
+            rotateXMax: 35,
+
+            });
+
+            const myAtropos2 = Atropos({
+            el: '.my-atropos2',
+            shadowScale: 1,
+            shadow: true,
+            shadowOffset: 40,
+            rotateXMax: 35,
+
+            });
+
+            const myAtropos3 = Atropos({
+            el: '.my-atropos3',
+            shadowScale: 1,
+            shadow: true,
+            shadowOffset: 40,
+            rotateXMax: 35,
+
+            });
+    </script>
+    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal().reveal( ".caracteristicas__bloco1 ", {
@@ -82,3 +159,4 @@
     </script>
 </body>
 </html>
+

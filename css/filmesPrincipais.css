@@ -1,0 +1,19 @@
+.filmesPrincipais {
+    height: 700px;
+    background: rgb(178,60,244);
+    background: linear-gradient(90deg, rgba(178,60,244,1) 0%, rgba(93,22,165,1) 100%);
+    display: grid;
+    grid-template-rows: 1fr 1fr auto auto 1fr;
+    
+}
+img, .atropos {
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+}
+.filmesPrincipais__titulo {
+    grid-row-start: 1;
+    grid-column: 1/12;
+    text-align: center;
+    margin-top: 24px;
+}
