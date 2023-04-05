@@ -1,6 +1,8 @@
 @import "header.css";
 @import "caracteristicas.css";
 @import "filmesPrincipais.css";
+@import "footer.css";
+@import "responsividade.css";
 
 * {
     padding: 0;

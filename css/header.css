@@ -89,7 +89,7 @@ h2 {
     align-items: center;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
     .menu__links {
         display: none;
     }
@@ -97,10 +97,11 @@ h2 {
         font-size: 24px;
     }
     h2 {
-        font-size: 12px;
+        font-size: 24px;
     }
     .btn__start, .btn__plan {
         width: 100px;
         height: 50px;
     }
 }
+

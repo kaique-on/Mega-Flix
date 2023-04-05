@@ -1,9 +1,12 @@
 .filmesPrincipais {
+    width: 100%;
     height: 700px;
     background: rgb(178,60,244);
     background: linear-gradient(90deg, rgba(178,60,244,1) 0%, rgba(93,22,165,1) 100%);
     display: grid;
     grid-template-rows: 1fr 1fr auto auto 1fr;
+    grid-template-columns: repeat(12 1fr);
+    gap: 48px;
     
 }
 img, .atropos {
@@ -12,8 +15,84 @@ img, .atropos {
     border-radius: 16px;
 }
 .filmesPrincipais__titulo {
-    grid-row-start: 1;
+    grid-row: 1;
     grid-column: 1/12;
     text-align: center;
     margin-top: 24px;
+}
+
+.my-atropos {
+    grid-row: 3;
+    grid-column: 2/5;
+}
+.my-atropos2 {
+    grid-row: 3;
+    grid-column: 5/8;
+}
+.my-atropos3 {
+    grid-row: 3;
+    grid-column: 8/11;
+}
+.my-atropos4 {
+    grid-row: 4;
+    grid-column: 2/5;
+}
+.my-atropos5 {
+    grid-row: 4;
+    grid-column: 5/8;
+}
+.my-atropos6 {
+    grid-row: 4;
+    grid-column: 8/11;
+}
+
+@media (max-width: 800px){
+    .filmesPrincipais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1300px){
+    .filmesPrincipais {
+        display: grid;
+        grid-template-columns: repeat(8 1fr);
+        grid-template-rows: auto auto auto 1fr 1fr;
+        gap: 48px;
+        height: 100%;
+        width: 100%;
+
+    }
+    .filmesPrincipais__titulo {
+        grid-row: 1;
+        grid-column: 1/8;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .my-atropos {
+        grid-row: 3;
+        grid-column: 2/5;
+    }
+    .my-atropos2 {
+        grid-row: 3;
+        grid-column: 5/8;
+    }
+    .my-atropos3 {
+        grid-row: 4;
+        grid-column: 2/5;
+    }
+    .my-atropos4 {
+        grid-row: 4;
+        grid-column: 5/8;
+    }
+    .my-atropos5 {
+        grid-row: 5;
+        grid-column: 2/5;
+    }
+    .my-atropos6 {
+        grid-row: 5;
+        grid-column: 5/8;
+    }
 }
