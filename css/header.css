@@ -36,10 +36,11 @@ a {
     align-items: center;
     height: 100px;
 }
-h6 {
+.h6nav {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
     color: #fd0178;
+    text-align: center;
 }
 .home {
     color: #fd0178;

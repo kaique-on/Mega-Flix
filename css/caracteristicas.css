@@ -53,7 +53,7 @@ p {
     font-weight: 200;
 }
 
-@media (max-width: 720px){
+@media (max-width: 800px){
     .caracteristicas{
         display: flex;
         flex-direction: column;
